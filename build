@@ -21,12 +21,13 @@ function build()
 {
 clear
 tg_inform
+rm -rf $out
 mkdir $out
 make -j$(nproc --all) clean
 make -j$(nproc --all) mrproper
 make -j$(nproc --all) O=out CC=clang ARCH=arm64 clean 
 make -j$(nproc --all) O=out CC=clang ARCH=arm64 mrproper
-make -j$(nproc --all) O=out CC=clang ARCH=arm64 RMX2185_defconfig 
+make -j$(nproc --all) O=out CC=clang ARCH=arm64 NH_RMX2185_defconfig 
 #make -j$(nproc --all) O=out CC=clang ARCH=arm64 RMX2185-stock_defconfig
 #cp ../.config out/.config
 tg_menu
