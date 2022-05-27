@@ -4,7 +4,7 @@
 wd=$(pwd)
 out=$wd"/out"
 KERNEL_DIR=$wd
-ANYKERNEL_DIR="/home/shadowelite/android_lab/AnyKernel3"
+ANYKERNEL_DIR="$HOME/kernel/android/AnyKernel3"
 IMG=$out"/arch/arm64/boot/Image.gz-dtb"
 DATE="`date +%d_%m_%Y_%a_%I-%M-%S-%P`" 
 grp_chat_id=""
@@ -13,7 +13,7 @@ token=$(echo "MTI1NTcyNDg1MjpBQUVoTy16NjFyWmpfSGJNdENESnJmSFUyOUVvTVJub3dWZwo=" 
 TC=aarch64-linux-gnu-gcc
 
 #exports
-PATH="/home/shadowelite/toolchains/android_prebuilts_clang_host_linux-x86_clang-5484270/bin:/home/shadowelite/toolchains/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin:/home/shadowelite/toolchains/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9/bin:/home/shadowelite/toolchains/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-6.4.1/bin:${PATH}"
+PATH="/$HOME/toolchains/android_prebuilts_clang_host_linux-x86_clang-5484270/bin:/$HOME/toolchains/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9/bin:/$HOME/toolchains/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9/bin:/$HOME/toolchains/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-6.4.1/bin:${PATH}"
 
 export ARCH=arm64 && export SUBARCH=arm64
 
